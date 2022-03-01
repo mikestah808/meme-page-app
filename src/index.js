@@ -21,15 +21,13 @@ function getMemes(){
             button.id = "like-button"
             button.innerText = "Like"
             let span = document.createElement('span')
-            span.class = 'like-glyph'
+            span.classList = "like-glyph"
             span.innerText = "♡"
             button.append(span)
             li.append(a)
             ul.append(li)
             ul.append(button)
             button.addEventListener('click', likeButton)
-
-            // console.log(button)
 
 })
 
@@ -41,6 +39,10 @@ function getMemes(){
 
 function likeButton(){
 
+    let button = document.getElementById('like-button')
+    // let heart = document.getElementsByClassName('like-glyph')
+    // console.log(heart)
+    console.log(button)
     console.log("I've been clicked!");
 
 
