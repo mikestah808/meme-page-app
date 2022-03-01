@@ -5,7 +5,7 @@ h1 {
 
 
 body {
-    background: silver
+    background: yellow;
   }
   
   /* Tag selector to select all 'div' elements. We only have one 'div' in our HTML */
@@ -13,7 +13,7 @@ body {
     width: 700px;
     margin: auto;
     font-family: "Helvetica Neue";
-    background: white;
+    background: yellow;
     padding: 30px;
   }
   
@@ -30,5 +30,13 @@ body {
 
 
   div#main.container{
-    background: silver
+    background: yellow;
+  }
+
+  .red-heart {
+    color: red;
+  }
+
+  li {
+    list-style: none;
   }

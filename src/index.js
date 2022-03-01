@@ -15,19 +15,21 @@ function getMemes(){
 
             let li = document.createElement('li')
             let a = document.createElement('a')
+            // li.addEventListener('click', (e) =>{
+            //     // add img tag to the DOM
+            // })
             a.innerText = meme.name
             a.href = meme.url
             let button = document.createElement('button')
             button.id = "like-button"
-            button.innerText = "Like"
             let span = document.createElement('span')
-            span.classList = "like-glyph"
-            span.innerText = "♡"
+            span.innerText = 'Like ♥'
             button.append(span)
+            button.addEventListener('click', likeButton)
             li.append(a)
             ul.append(li)
             ul.append(button)
-            button.addEventListener('click', likeButton)
+            
 
 })
 
@@ -37,12 +39,9 @@ function getMemes(){
 };
 
 
-function likeButton(){
-
-    let button = document.getElementById('like-button')
-    // let heart = document.getElementsByClassName('like-glyph')
-    // console.log(heart)
-    console.log(button)
+function likeButton(event){
+    console.log(event)
+    event.target.classList.toggle('red-heart')
     console.log("I've been clicked!");
 
 
