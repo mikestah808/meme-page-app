@@ -1,6 +1,10 @@
 h1 {
-    color: darkblue;
+    color: green;
     text-align: center;
+}
+
+h2 {
+  color: green;
 }
 
 
@@ -15,6 +19,7 @@ body {
     font-family: "Helvetica Neue";
     background: yellow;
     padding: 30px;
+    text-align: left;
   }
   
   /* ID selector to select the element with id 'main-header' */
@@ -32,6 +37,7 @@ body {
   div#main.container{
     background: yellow;
   }
+
 
   .red-heart {
     color: red;
