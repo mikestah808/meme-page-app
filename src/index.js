@@ -18,11 +18,14 @@ function getMemes(){
             a.innerText = meme.name
             a.href = meme.url
             let button = document.createElement('button')
+            button.id = "comments"
             button.innerText = "Comment"
             li.append(a)
             ul.append(li)
             ul.append(button)
-            button.addEventListener('click', doSomething)
+            button.addEventListener('click', displayComment)
+
+            // console.log(button)
 
 })
 
@@ -32,32 +35,23 @@ function getMemes(){
 };
 
 
-function doSomething(){
-    // console.log('hi');
-     // console.log(option)
-    let select = document.createElement('select')
-    select.name = "meme-alphabet"
-    select.id = "memes"
-    console.log(select.id)
-    let option = document.createElement('option')
-    let option2 = document.createElement('option')
-    let option3 = document.createElement('option')
-
-    option.value = "A-I"
-    option2.value = "J-Q"
-    option3.value = "R-Z"
-
-    option.innerText = "A-I"
-    option2.innerText = "J-Q"
-    option3.innerText = "R-Z"
+function displayComment(){
 
 
-    select.append(option)
-    select.append(option2)
-    select.append(option3)
 
-    console.log(select);
+
 }
+
+
+commentForm = document.getElementById('commentForm')
+
+commentForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // alert("Thanks for commenting!")
+    console.log("Comment has been submitted!");
+    commentForm.reset();
+})
+
 
 
 
@@ -76,7 +70,7 @@ function doSomething(){
 
 //event listener 
 //add the correct url link to each a tag 
-// find a way to make img sho on tag with url link
+// find a way to make img show on tag with url link
 
 
 
@@ -96,40 +90,21 @@ function doSomething(){
 
 
 
+// let h2 = document.createElement('h2')
+// h2.innerText = "Leave Us a Comment"
+// let form = document.createElement('form')
+// let textarea = document.createElement('textarea')
+// textarea.placeholder = "Add Your Comment"
+// div.class = "button"
+// form.append(textarea)
+// form.append(div)
+// console.log(commentBox)
 
+// let input = document.createElement('input')
+// input.type = "submit"
+// input.value = "Comment"
+// div.appendChild(input)
 
-
-
-
-// data.data.memes.forEach(meme => {
-
-//     ul.innerHTML += `
-//     <li><a href = ${meme.url}>${meme.name}</a></li>
-//     <button id="comment-button">Comment</button>
-//     `
-
-// })
-
-
-
-
-
-// let li = document.createElement('li')
-// let a = document.createElement('a')
-// a.innerText = meme.name
-// a.href = meme.url
 // let button = document.createElement('button')
-// button.innerText = "Comment"
-// li.append(a)
-// ul.append(li)
-// button.addEventListener('click', doSomething)
-
-
-
-
-
-
-
-// what do i want function doSomething to peform? 
-
-//
+// button.innerText = "Cancel"
+// div.appendChild(button)

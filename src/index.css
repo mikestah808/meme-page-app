@@ -1,11 +1,11 @@
 h1 {
-    color: black;
+    color: darkblue;
     text-align: center;
 }
 
 
 body {
-    background: goldenrod
+    background: silver
   }
   
   /* Tag selector to select all 'div' elements. We only have one 'div' in our HTML */
@@ -26,4 +26,9 @@ body {
   /* Class selector to select elements containing the class 'perspective-questions' */
   .perspective-questions {
    font-style: italic;
+  }
+
+
+  div#main.container{
+    background: silver
   }
