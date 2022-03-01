@@ -18,12 +18,16 @@ function getMemes(){
             a.innerText = meme.name
             a.href = meme.url
             let button = document.createElement('button')
-            button.id = "comments"
-            button.innerText = "Comment"
+            button.id = "like-button"
+            button.innerText = "Like"
+            let span = document.createElement('span')
+            span.class = 'like-glyph'
+            span.innerText = "♡"
+            button.append(span)
             li.append(a)
             ul.append(li)
             ul.append(button)
-            button.addEventListener('click', displayComment)
+            button.addEventListener('click', likeButton)
 
             // console.log(button)
 
@@ -35,8 +39,9 @@ function getMemes(){
 };
 
 
-function displayComment(){
+function likeButton(){
 
+    console.log("I've been clicked!");
 
 
 
