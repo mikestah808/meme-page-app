@@ -15,9 +15,7 @@ function getMemes(){
 
             let li = document.createElement('li')
             let a = document.createElement('a')
-            // li.addEventListener('click', (e) =>{
-            //     // add img tag to the DOM
-            // })
+            
             a.innerText = meme.name
             a.href = meme.url
             let button = document.createElement('button')
@@ -62,55 +60,4 @@ commentForm.addEventListener('submit', (e) => {
 
 
 
-// add class = "container" to ul 
-// use event.target in the callback 
 
-
-
-// Objective
-
-
-//click on the a tag title name, use an click event listener that uses a callback function which displays an img of the meme 
-
-// what do i need to do in order to make this work?
-
-//event listener 
-//add the correct url link to each a tag 
-// find a way to make img show on tag with url link
-
-
-
-//Event Listener on change
-// select dropdown categorizing by letters
-// A-Z
-
-//create select tag in html
-// create event listener to grab select tag 
-// query selector for it 
-
-
-
-
-
-
-
-
-
-// let h2 = document.createElement('h2')
-// h2.innerText = "Leave Us a Comment"
-// let form = document.createElement('form')
-// let textarea = document.createElement('textarea')
-// textarea.placeholder = "Add Your Comment"
-// div.class = "button"
-// form.append(textarea)
-// form.append(div)
-// console.log(commentBox)
-
-// let input = document.createElement('input')
-// input.type = "submit"
-// input.value = "Comment"
-// div.appendChild(input)
-
-// let button = document.createElement('button')
-// button.innerText = "Cancel"
-// div.appendChild(button)

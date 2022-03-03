@@ -24,16 +24,15 @@ This project was made with the intention of getting out a good old laugh from so
 
 # How to use it 
 
-Click on a meme name to see the meme!
+ Click on a meme name to see the meme!
 
 ![meme image](./gifs/pic.gif)
 
-
-Click on like button if you liked the meme!
+ Click on like button if you liked the meme!
 
 ![like](./gifs/heart.gif)
 
-Comment box to let us know which meme was your favorite then hit submit! 
+ Comment box to let us know which meme was your favorite then hit submit! 
 
 ![comment](./gifs/comment.gif)
 
